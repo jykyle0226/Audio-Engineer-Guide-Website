@@ -1,0 +1,19 @@
+.MixerLeftdiv{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  height: 650px;
+}
+.MixerLeft{
+  padding: 40px;
+  width: 500px;
+  height: 500px;
+}
+
+#MixerLeft{
+
+  width: 500px;
+  height: 300px;
+  font-size: 20px;
+}

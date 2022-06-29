@@ -1,0 +1,14 @@
+.scenediv{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+.sceneImg{
+  width:400px;
+
+}
+#scene{
+  width: 500px;
+  font-size: 20px;
+}
