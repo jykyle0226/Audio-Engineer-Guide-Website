@@ -20,6 +20,9 @@ const NavBar = (props) => {
         <Link to="/Guide">
         <li>Guide</li>
         </Link>
+        <Link to="/Picture">
+        <li>Picture</li>
+        </Link>
       </nav>
       
     </div>

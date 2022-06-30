@@ -8,7 +8,7 @@ const About = (props) => {
           className="Samonim-image"
           alt="..."
         />
-        <h1>Sarah Sanghwa Oh</h1>
+        <h1 id="samonim-name">Sarah Sanghwa Oh</h1>
         <h3>Pastor/Worship Director</h3>
 
         
@@ -25,7 +25,7 @@ const About = (props) => {
           className="Shin-image"
           alt="..."
         />
-        <h1>Isaiah Minchoul Shin</h1>
+        <h1 id="Shin-name">Isaiah Minchoul Shin</h1>
         <h3>Producer</h3>
 
         

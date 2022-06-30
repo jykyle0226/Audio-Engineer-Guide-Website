@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Feedback from './pages/Feedback'
 import Guide from './pages/Guide'
+import Picture from './pages/Picture';
 
 
 // Styles
@@ -36,6 +37,9 @@ function App() {
 
       <Route path="/Guide">
         <Guide className="guides"/>
+      </Route>
+      <Route path="/Picture">
+        <Picture />
       </Route>
         
       <Footer />
