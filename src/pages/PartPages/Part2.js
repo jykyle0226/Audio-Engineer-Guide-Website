@@ -6,13 +6,13 @@ import Mid2 from '../../components/GuideComponents/Mid2';
 import Mid3 from '../../components/GuideComponents/Mid3';
 const Part2 = (props) => {
   return(
-    <div >
-        <div>
+    <div className='Part2-all'>
+      <div>
         <h1> Mixer </h1>
       </div>
-      <div>
+      <div className='Part2-div'>
         <Mixer></Mixer>
-        <Scene className="Scene"></Scene>
+        <Scene></Scene>
         <MixerLeft></MixerLeft>
         <Mid1></Mid1>
         <Mid2></Mid2>

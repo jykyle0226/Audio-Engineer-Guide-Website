@@ -3,7 +3,7 @@ import '../../Style/mid2.css'
 
 const Mid2 = () => {
   return (
-    <div className="MixerLeftdiv">
+    <div className="Mid2">
     <img 
     src="https://i.imgur.com/QJJj1oP.png?2"
     className="MixerLeft"

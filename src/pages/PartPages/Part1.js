@@ -2,7 +2,8 @@
 
 const Part1 = (props) => {
   return(
-    <div className='guides'>
+    <div className="Part1">
+      <div className='Part1-div'>
       <h1> What we do as Audio Engineers at GCCK</h1>
     <ul>
     <li id='expectations'>We produce optimal audio experiences for the online and on-site congregation by utilizing/operating the features in the console(mixer)</li>
@@ -13,6 +14,7 @@ const Part1 = (props) => {
         <li id='expectations'>Obedience. For obedience is better than sacrifice, we respect and follow every decision that our leaders make.</li>
         <li id='expectations'>Try to have every sound in control.</li>
       </ul>
+    </div>
     </div>
 
   );

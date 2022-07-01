@@ -1,7 +1,7 @@
 const About = (props) => {
   return (
 <div className="AboutDiv">
-  <div className="Picture">
+  <div className="About-Picture">
   <div id="profile" className="Samonim">
       <img 
           src="https://i.imgur.com/hDDDcWsm.png"

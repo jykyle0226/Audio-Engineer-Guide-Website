@@ -34,6 +34,13 @@ code {
   display: inline-block;
   align-items: center;
   justify-content: center;
+  border-spacing: 3px;
+  border-color: grey;
+  line-height: 1.45rem;
+}
+
+.tr{
+  border: solid;
 }
 
 .table a:visited{
@@ -147,7 +154,7 @@ code {
   margin: 100px;
 }
 
-.Picture{
+.About-Picture{
   margin: 100px;
   display: flex;
   justify-content: center;
@@ -166,9 +173,10 @@ code {
 }
 
 .Samonim, .Shin, .kim{
+  opacity: 0.9;
   border: solid;
   border-width: 1.5px;
-  background-color: gray;
+  background-color: rgb(171, 170, 170);
   width: 300px;
   height: 420px;
   padding: 30px;
@@ -178,10 +186,74 @@ code {
 
 .Home{
   border: solid;
-  border-color: rgb(167, 167, 167);;
+  border-color: rgb(167, 167, 167);
   border-width: 1px;
   padding: 200px;
   margin: 100px;
   background-color: rgb(167, 167, 167);
   opacity: 0.78;
+}
+
+.picture-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.Picture{
+  margin: 100px;
+  background-color:  rgb(167, 167, 167);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+  flex-wrap: wrap;
+  padding: 50px;
+  width: 500px;
+}
+
+.Picture-img{
+  width: 500px;
+  height: 500px;
+}
+
+.anniversary{
+  color: white;
+  font-size: 50px;
+}
+
+.mixerdiv, .MixerLeftdiv, .scenediv, .Mid1, .Mid2, .Mid3{
+  border: solid;
+  border-width: 1px;
+  width: 1000px;
+  text-align: center;
+  background-color: rgb(178, 178, 178);
+  opacity: 0.9;
+}
+
+.Part2-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 30px;
+}
+
+.Part1-div{
+  border: solid;
+  border-width: 1px;
+  width: 1000px;
+  margin: 20px;
+  padding: 50px;
+  background-color: rgb(178, 178, 178);
+  opacity: 0.9;
+}
+
+.Part1{
+  display: flex;
+  justify-content: center;
 }

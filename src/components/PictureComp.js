@@ -7,10 +7,13 @@ const WeatherForecast = (props) => {
   console.log("this is props", props);
 
   return (
-    <div className="Picture">
-      <PictureImg img={props.img} />
-      <PictureAnniversary Anniversary={props.Anniversary}/>
-    </div>
+    <section className="picture-section">
+      <div className="Picture">
+        <PictureImg img={props.img} />
+        <PictureAnniversary Anniversary={props.Anniversary}/>
+      </div>
+    </section>
+
   );
 };
 

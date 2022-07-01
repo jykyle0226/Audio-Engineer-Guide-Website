@@ -23,28 +23,28 @@ const Guide = (props) => {
           </Link>
           </tr>
 
-          <tr>
+          <tr className='tr'>
           <Link to="/guide/part2">
           <td id="td1">Part 2</td>
           <td id='td2'>Mixer</td>
           </Link>
           </tr>
 
-          <tr>
+          <tr className='tr'>
           <Link to="/guide/part3">
           <td id="td1">Part 3</td>
           <td id='td2'>Sound blending in Worship</td>
           </Link>
           </tr>
 
-          <tr>
+          <tr className='tr'>
           <Link to="/guide/part4">
           <td id="td1">Part 4</td>
           <td id='td2'>Background Music</td>
           </Link>
           </tr>
 
-          <tr>
+          <tr className='tr'>
           <Link to="/guide/part5">
           <td id="td1">Part 5</td>
           <td id='td2'>Advanced Engineering you can do...</td>

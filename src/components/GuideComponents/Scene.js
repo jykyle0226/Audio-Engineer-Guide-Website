@@ -9,9 +9,10 @@ const Scene = () => {
     className="sceneImg"
     alt="..."
       />
-    <h4 id="mixer">We use Yamaha CL5 mixer in our main sanctuary. CL5 has 72 channels and has many different sound effects and features. In this guide, we will go over basic features that you can learn to get familiar with this console. 
-
-    In order to turn this mixer on, on your right bottom side, there is a key that is already inserted. You can enable the start button by turning that key twice. Then, click the on button
+    <h4 id="Scene">
+      When the console is turned on, click your right bottom corner, where it says Scene XXX. You will see a screen like the image on the left. This page is called “Scene List.” This is where you save/recall your finished work. GCCK’s scenes are saved on 10th and 11th.
+    
+      On 10th scene, we have saved our default setting and the 11th scene is where we save/recall for the worship.
     </h4>
     </div>          
     
