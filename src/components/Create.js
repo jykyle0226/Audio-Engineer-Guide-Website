@@ -3,9 +3,11 @@ import { useState } from "react";
 
 const Create = (props) => {
   const [ newForm, setNewForm ] = useState({
-    destination: '',
-    image: '',
-    description: '',
+    date: '',
+    name: '',
+    role: '',
+    feedback: '',
+    solution: ''
   });
 
 
@@ -25,31 +27,45 @@ const Create = (props) => {
       <form onSubmit={handleSubmit}>
 
         <input 
-          value={newForm.title}
+          value={newForm.date}
           onChange={handleChange}
-          name="title"
+          name="date"
           type="text"
-          placeholder="destination / activity" 
+          placeholder="e.g 'July 4th, 2022" 
         />
         <br />
         <input 
-          value={newForm.img}
+          value={newForm.name}
           onChange={handleChange}
-          name="img"
+          name="name"
           type="text"
-          placeholder="image url" 
+          placeholder="" 
         />
         <br />
-        <textarea 
-          value={newForm.description}
+        <input 
+          value={newForm.role}
           onChange={handleChange}
-          name="description"
-          cols="30"
-          rows="10"
-          placeholder="description" 
+          name="role"
+          placeholder="e.g Audio Engineer" 
         />
         <br />
-        <input type="submit" value="Add to Bucket!"/>
+        <input 
+          value={newForm.feedback}
+          onChange={handleChange}
+          name="feedback"
+          type="text"
+          placeholder="" 
+        />
+        <input 
+          value={newForm.solution}
+          onChange={handleChange}
+          name="solution"
+          type="text"
+          placeholder="" 
+        />
+        
+        <br />
+        <input type="submit" value="Add to feedback"/>
       </form>
     </div>
   )

@@ -5,13 +5,14 @@ import { Route } from "react-router-dom";
 // UI Components
 import Footer from "./components/Footer"
 import NavBar from "./components/Navbar";
-
+import Create from './components/Create'
 //  Pages
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Feedback from './pages/Feedback'
 import Guide from './pages/Guide'
 import Picture from './pages/Picture';
+
 
 
 // Styles
@@ -41,7 +42,10 @@ function App() {
       <Route path="/Picture">
         <Picture />
       </Route>
-        
+      
+      <Route path="/create">
+        <Create/>
+      </Route>
       <Footer />
     </div>
   );

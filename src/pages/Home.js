@@ -1,12 +1,5 @@
-import { useState } from "react";
-import Create from "../components/Create";
 
 const Home = (props) => {
-    const [ pathURL, setPathURL ] = useState(null);
-
-    const selectURL = (event) => {
-        setPathURL(event.target.innerText.toLowerCase())
-    }
 
     return(
         <div className="Home">
