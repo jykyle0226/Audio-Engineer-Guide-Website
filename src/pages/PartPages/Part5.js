@@ -1,7 +1,7 @@
-
-const Part5 = (props) => {
+import Part5comp from "../../components/GuideComponents/Part5comp";
+const Part5 = () => {
   return(
-      <h1> This is the Part5 page</h1>
+    <Part5comp></Part5comp>
   );
 };
 

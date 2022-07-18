@@ -1,6 +1,6 @@
 
 
-const Part1 = (props) => {
+const Part1 = () => {
   return(
     <div className="Part1">
       <div className='Part1-div'>
