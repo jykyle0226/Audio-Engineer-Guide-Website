@@ -8,11 +8,12 @@ import Index from "../pages/Index";
 const Feedback = (props) => {
   const [feedback, setFeedback] = useState(null);
 
-  const URL = "http://localhost:4000/Feedback";
+  const URL = "http://localhost:4000/Feedback/";
 
   const getFeedback = async () => {
     const response = await fetch(URL);
     const data = await response.json();
+    console.log(data)
     setFeedback(data);
   };
 

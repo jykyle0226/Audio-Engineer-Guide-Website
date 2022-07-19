@@ -23,6 +23,9 @@ const NavBar = (props) => {
         <Link to="/Picture">
           <li>Picture</li>
         </Link>
+        <Link to="/Spotify">
+          <li>Spotify</li>
+        </Link>
       </nav>
     </div>
   );

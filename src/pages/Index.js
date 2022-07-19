@@ -13,7 +13,7 @@ const Index = (props) => {
   const handleChange = (event) => {
     setNewForm({
       ...newForm,
-      [event.target.date]: event.target.value,
+      [event.target.name]: event.target.value,
     });
   };
 
