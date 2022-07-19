@@ -1,29 +1,27 @@
 import { Route } from "react-router-dom";
 
 // UI Components
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 import NavBar from "./components/Navbar";
-import Create from './components/Create'
+import Create from "./components/Create";
 //  Pages
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Feedback from './pages/Feedback'
-import Guide from './pages/Guide'
-import Picture from './pages/Picture';
-
-
+import Feedback from "./pages/Feedback";
+import Guide from "./pages/Guide";
+import Picture from "./pages/Picture";
+import Show from "./pages/Show"
 
 // Styles
-import './App.css';
-
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar />
 
       <Route exact path="/">
-        <Home/>
+        <Home />
       </Route>
 
       <Route path="/About">
@@ -35,14 +33,10 @@ function App() {
       </Route>
 
       <Route path="/Guide">
-        <Guide className="guides"/>
+        <Guide className="guides" />
       </Route>
       <Route path="/Picture">
         <Picture />
-      </Route>
-      
-      <Route path="/create">
-        <Create/>
       </Route>
       <Footer />
     </div>

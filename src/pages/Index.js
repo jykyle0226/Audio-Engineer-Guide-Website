@@ -1,7 +1,7 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const Create = (props) => {
+const Index = (props) => {
   const [newForm, setNewForm] = useState({
     date: "",
     name: "",
@@ -13,66 +13,67 @@ const Create = (props) => {
   const handleChange = (event) => {
     setNewForm({
       ...newForm,
-      [event.target.name]: event.target.value,
+      [event.target.date]: event.target.value,
     });
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.createDestination(newForm);
+    props.createFeedback(newForm);
+  };
+
+  const loaded = () => {
+    return props.feedback.map((data) => (
+      <li key={data._id} className="feedback-data">
+        <Link to={`/Feedback/${data._id}`}>
+          <h1>{data.date}</h1>
+          <h3>{data.feedback}</h3>
+        </Link>
+      </li>
+    ));
+  };
+  const loading = () => {
+    return <h1>Loading...</h1>;
   };
 
   return (
-    <div className="createForm">
+    <section>
       <form onSubmit={handleSubmit}>
-        <h3>Date</h3>
         <input
+          name="date"
           value={newForm.date}
           onChange={handleChange}
-          name="date"
           type="text"
-          placeholder="e.g 'July 4th, 2022"
         />
-        <br />
-        <h3>Name</h3>
         <input
+          name="name"
           value={newForm.name}
           onChange={handleChange}
-          name="name"
           type="text"
-          placeholder=""
         />
-        <br />
-        <h3>Role</h3>
         <input
+          name="role"
           value={newForm.role}
           onChange={handleChange}
-          name="role"
-          placeholder="e.g Audio Engineer"
+          type="text"
         />
-        <br />
-        <h3>Feedback</h3>
         <input
+          name="feedback"
           value={newForm.feedback}
           onChange={handleChange}
-          name="feedback"
           type="text"
-          placeholder=""
         />
-        <br />
-        <h3>Solution</h3>
         <input
+          name="solution"
           value={newForm.solution}
           onChange={handleChange}
-          name="solution"
           type="text"
-          placeholder=""
         />
-
-        <br />
-        <input type="submit" value="Add to feedback" />
+        <input type="submit" value="Create Feedback" />
       </form>
-    </div>
+      {props.data ? <ol>{loaded()}</ol> : loading()}
+    </section>
   );
 };
 
-export default Create;
+export default Index;

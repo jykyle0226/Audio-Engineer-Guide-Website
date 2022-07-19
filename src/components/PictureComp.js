@@ -2,7 +2,6 @@ import React from "react";
 import PictureAnniversary from "./PictureAnniversary";
 import PictureImg from "./PictureImg";
 
-
 const WeatherForecast = (props) => {
   console.log("this is props", props);
 
@@ -10,10 +9,9 @@ const WeatherForecast = (props) => {
     <section className="picture-section">
       <div className="Picture">
         <PictureImg img={props.img} />
-        <PictureAnniversary Anniversary={props.Anniversary}/>
+        <PictureAnniversary Anniversary={props.Anniversary} />
       </div>
     </section>
-
   );
 };
 

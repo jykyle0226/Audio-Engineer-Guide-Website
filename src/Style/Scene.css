@@ -1,16 +1,14 @@
-.scenediv{
+.scenediv {
   display: flex;
   justify-content: center;
   padding: 20px;
   margin: 20px;
 }
-.sceneImg{
-  width:400px;
-
+.sceneImg {
+  width: 400px;
 }
 
-
-#Scene{
+#Scene {
   width: 500px;
   font-size: 20px;
   padding: 20px;

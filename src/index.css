@@ -4,18 +4,17 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 
 .NavBar {
   display: flex;
@@ -26,10 +25,9 @@ code {
   color: white;
   width: 100%;
   top: 0;
-  
 }
 
-.table{
+.table {
   margin: 10px;
   font-size: 20px;
   display: inline-block;
@@ -40,60 +38,59 @@ code {
   line-height: 1.45rem;
 }
 
-.tr{
+.tr {
   border: solid;
 }
 
-.table a:visited{
+.table a:visited {
   color: black;
 }
-.table a:hover{
-  color: rgb(167, 132, 167)
+.table a:hover {
+  color: rgb(167, 132, 167);
 }
 
-#td1{
+#td1 {
   float: left;
 }
-#td2{
+#td2 {
   float: center;
 }
-
 
 .Kim-image {
   /* margin-top: 50px;
   border-radius: 50%;
   width: 300px;
   height: 300px; */
-  padding:10px;
+  padding: 10px;
 }
 .Shin-image {
   /* margin-top: 50px;
   border-radius: 50%;
   width: 300px;
   height: 300px; */
-  padding:10px;
+  padding: 10px;
 }
 .Samonim-image {
   /* margin-top: 50px;
   border-radius: 50%;
   width: 300px;
   height: 300px; */
-  padding:10px;
+  padding: 10px;
 }
 
-.NavBar{
+.NavBar {
   color: white;
   background-color: rgb(24, 24, 24);
 }
-.NavBar a:hover{
+.NavBar a:hover {
   color: green;
 }
-.NavBar a:visited{
+.NavBar a:visited {
   color: white;
 }
 
 .welcome {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .welcome li {
@@ -103,34 +100,34 @@ code {
   margin: 20px;
 }
 
-.k{
+.k {
   margin: 5%;
-  width:250px;
-  height:250px;
+  width: 250px;
+  height: 250px;
 
-  object-fit:scale-down;
+  object-fit: scale-down;
   text-align: center;
 }
 
-.links{
+.links {
   border-radius: 50%;
-  display: flex ;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.git{
-    margin: 20px;
-    border-radius: 50%;
-    width:70px;
-    height:70px;
-    cursor: pointer;
+.git {
+  margin: 20px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
 }
-  
-  .linked {
-    border-radius: 50%;
-    width:70px;
-    height:70px;
-    cursor: pointer;
+
+.linked {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
 }
 
 .footer {
@@ -141,27 +138,29 @@ code {
   align-items: center;
   margin: 0;
   color: white;
-  position:fixed;
+  position: fixed;
   width: 100%;
   bottom: 0;
 }
 
-#expectations{
+#expectations {
   margin: 10px;
   list-style: none;
 }
 
-.AboutDiv{
+.AboutDiv {
   margin: 100px;
 }
 
-.About-Picture{
+.About-Picture {
   margin: 100px;
   display: flex;
   justify-content: center;
 }
 
-.Samonim-image, .Shin-image, .Kim-image{
+.Samonim-image,
+.Shin-image,
+.Kim-image {
   border: solid;
   border-width: 1px;
   border-radius: 70%;
@@ -169,11 +168,13 @@ code {
   height: 200px;
 }
 
-#profile{
+#profile {
   margin: 40px;
 }
 
-.Samonim, .Shin, .kim{
+.Samonim,
+.Shin,
+.kim {
   opacity: 0.9;
   border: solid;
   border-width: 1.5px;
@@ -184,8 +185,7 @@ code {
   font-size: 12px;
 }
 
-
-.Home{
+.Home {
   border: solid;
   border-color: rgb(167, 167, 167);
   border-width: 1px;
@@ -195,16 +195,16 @@ code {
   opacity: 0.78;
 }
 
-.picture-section{
+.picture-section {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 
-.Picture{
+.Picture {
   margin: 100px;
-  background-color:  rgb(167, 167, 167);
+  background-color: rgb(167, 167, 167);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,17 +216,22 @@ code {
   width: 500px;
 }
 
-.Picture-img{
+.Picture-img {
   width: 500px;
   height: 500px;
 }
 
-.anniversary{
+.anniversary {
   color: white;
   font-size: 50px;
 }
 
-.mixerdiv, .MixerLeftdiv, .scenediv, .Mid1, .Mid2, .Mid3{
+.mixerdiv,
+.MixerLeftdiv,
+.scenediv,
+.Mid1,
+.Mid2,
+.Mid3 {
   border: solid;
   border-width: 1px;
   width: 1000px;
@@ -235,7 +240,7 @@ code {
   opacity: 0.9;
 }
 
-.Part2-div{
+.Part2-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,7 +249,7 @@ code {
   margin: 30px;
 }
 
-.Part1-div{
+.Part1-div {
   border: solid;
   border-width: 1px;
   width: 1000px;
@@ -254,7 +259,7 @@ code {
   opacity: 0.9;
 }
 
-.Part1{
+.Part1 {
   display: flex;
   justify-content: center;
 }
