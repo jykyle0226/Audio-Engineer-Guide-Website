@@ -14,7 +14,7 @@ Mongo DB | Express.js | React.js | Node.js | Netlify | Heroku
 
 ## Getting Started
 
-[click here]() to see the deployed page!
+[click here](https://iridescent-croquembouche-9e80f7.netlify.app/) to see the deployed page!
 
 ## Future Enhancements:
  * Show/Delete function
