@@ -3,7 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Show from "../pages/Show";
 import Index from "../pages/Index";
-
+import Create from "./APIpage/Create";
+import "../Style/Index.css";
 const Feedback = (props) => {
   const [feedback, setFeedback] = useState(null);
 
@@ -49,6 +50,9 @@ const Feedback = (props) => {
   return (
     <main>
       <Switch>
+        <Route exact path="/Feedback/create">
+          <Create feedback={feedback} createFeedback={createFeedback} />
+        </Route>
         <Route exact path="/Feedback">
           <Index feedback={feedback} createFeedback={createFeedback} />
         </Route>
@@ -64,6 +68,13 @@ const Feedback = (props) => {
           )}
         />
       </Switch>
+      <div id="add-button">
+        <Link to="/Feedback/create">
+          <button  className="button-40">
+            Add Feedback
+          </button>
+        </Link>
+      </div>
     </main>
   );
 };

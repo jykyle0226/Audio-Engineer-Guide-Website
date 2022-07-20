@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "../../Style/spotify.css"
+import "../../Style/spotify.css";
 function Spotify() {
   const CLIENT_ID = "c8a2306be41f4413ad5578215afa8c04";
-  const REDIRECT_URI = "http://localhost:3000/Spotify";
+  const REDIRECT_URI = "https://incandescent-stroopwafel-901f38.netlify.app/Spotify";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
 
@@ -43,15 +43,18 @@ function Spotify() {
 
   const searchArtists = async (e) => {
     e.preventDefault();
-    const { data } = await axios.get("https://api.spotify.com/v1/search?limit=3", {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-      params: {
-        q: searchKey,
-        type: "artist",
-      },
-    });
+    const { data } = await axios.get(
+      "https://api.spotify.com/v1/search?limit=3",
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+        params: {
+          q: searchKey,
+          type: "artist",
+        },
+      }
+    );
 
     setArtists(data.artists.items);
   };
@@ -74,20 +77,31 @@ function Spotify() {
       <header className="App-header">
         <h1>Find your worship band!</h1>
         {!token ? (
-          <a
+          <button
+            className="button-68"
             href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}
           >
             Login to Spotify
-          </a>
+          </button>
         ) : (
-          <button onClick={logout}>Logout</button>
+          <button className="button-68" onClick={logout}>
+            Logout
+          </button>
         )}
 
         {token ? (
-          <form onSubmit={searchArtists}>
-            <input type="text" onChange={(e) => setSearchKey(e.target.value)} />
-            <button type={"submit"}>Search</button>
-          </form>
+          <div className="searchbar-div">
+            <form className="form" onSubmit={searchArtists}>
+              <input
+                className="spotify-input"
+                type="text"
+                onChange={(e) => setSearchKey(e.target.value)}
+              />
+              <button id="search-button" className="button-68" type={"submit"}>
+                Search
+              </button>
+            </form>
+          </div>
         ) : (
           <h2>Please login</h2>
         )}
