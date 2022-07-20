@@ -8,7 +8,7 @@ const Picture = (props) => {
   });
 
   return (
-    <div>
+    <div className="picture-div">
       <section className="picture-section">{data}</section>
     </div>
   );

@@ -200,6 +200,8 @@ code {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .Picture {
@@ -263,3 +265,4 @@ code {
   display: flex;
   justify-content: center;
 }
+
