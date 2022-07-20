@@ -57,3 +57,19 @@
   margin: 8px 0;
   box-sizing: border-box;
 }
+
+.create-div{
+  border: solid black;
+  width: 1400px;
+  height: 800px;
+  background-color: grey;
+  opacity: 0.9;
+}
+
+.the-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+
+}

@@ -24,7 +24,8 @@ const Create = (props) => {
 
   };
   return (
-    <div>
+    <div className="the-div">
+          <div className="create-div">
       <form onSubmit={handleSubmit}>
       <h2>Date</h2>
       <input
@@ -32,7 +33,7 @@ const Create = (props) => {
         name="date"
         value={newForm.date}
         onChange={handleChange}
-        placeholder="date"
+        placeholder="e.g 01/01/2022"
         type="text"
       />
       <h2>Name</h2>
@@ -77,6 +78,8 @@ const Create = (props) => {
 
     </form>
     </div>
+    </div>
+
     
   );
 };
