@@ -3,7 +3,7 @@ import axios from "axios";
 
 function Spotify() {
   const CLIENT_ID = "c8a2306be41f4413ad5578215afa8c04";
-  const REDIRECT_URI = "https://localhost:3000";
+  const REDIRECT_URI = "http://localhost:3000/Spotify";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
 
@@ -72,7 +72,7 @@ function Spotify() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Spotify React</h1>
+        <h1>Find your worship band!</h1>
         {!token ? (
           <a
             href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}
