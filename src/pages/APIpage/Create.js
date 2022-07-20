@@ -1,4 +1,4 @@
-import { useState, Redirect } from "react";
+import { useState } from "react";
 import "../../Style/create.css";
 const Create = (props) => {
 
@@ -20,7 +20,6 @@ const Create = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     props.createFeedback(newForm);
-    return <Redirect to="/Feedback" />
 
   };
   return (
