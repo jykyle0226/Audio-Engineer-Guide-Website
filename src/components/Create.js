@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const Create = (props) => {
+  
   const [newForm, setNewForm] = useState({
     date: "",
     name: "",
