@@ -233,7 +233,10 @@ code {
 .scenediv,
 .Mid1,
 .Mid2,
-.Mid3 {
+.Mid3,
+.Part3,
+.BGM,
+.Part5 {
   border: solid;
   border-width: 1px;
   width: 1000px;
@@ -266,3 +269,12 @@ code {
   justify-content: center;
 }
 
+.part3-div,
+.part4-div,
+.part5-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
