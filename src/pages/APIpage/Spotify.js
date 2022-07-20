@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import "../../Style/spotify.css"
 function Spotify() {
   const CLIENT_ID = "c8a2306be41f4413ad5578215afa8c04";
   const REDIRECT_URI = "http://localhost:3000/Spotify";

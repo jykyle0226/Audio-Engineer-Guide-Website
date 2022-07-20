@@ -20,6 +20,7 @@ const Index = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     props.createFeedback(newForm);
+
   };
 
   const loaded = () => {
@@ -43,35 +44,40 @@ const Index = (props) => {
           name="date"
           value={newForm.date}
           onChange={handleChange}
+          placeholder="date"
           type="text"
         />
         <input
           name="name"
           value={newForm.name}
           onChange={handleChange}
+          placeholder="name"
           type="text"
         />
         <input
           name="role"
           value={newForm.role}
           onChange={handleChange}
+          placeholder="role"
           type="text"
         />
         <input
           name="feedback"
           value={newForm.feedback}
           onChange={handleChange}
+          placeholder="feedback"
           type="text"
         />
         <input
           name="solution"
           value={newForm.solution}
           onChange={handleChange}
+          placeholder="solution"
           type="text"
         />
         <input type="submit" value="Create Feedback" />
       </form>
-      {props.data ? <ol>{loaded()}</ol> : loading()}
+      {props.feedback ? <ol>{loaded()}</ol> : loading()}
     </section>
   );
 };

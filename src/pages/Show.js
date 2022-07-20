@@ -1,33 +1,35 @@
 import { useState } from "react";
 import React from "react";
 
-const Show = (props) => {
+function Show(props) {
   const id = props.match.params.id;
-  const data = props.feedback.find((d) => d._id === id);
-  const [editForm, setEditFrom] = useState(data);
+  const feedback = props.feedback
+  const fedback = feedback.find((d) => d._id === id)
+  // state for form
+  const [editForm, setEditFrom] = useState(fedback);
   const handleChange = (event) => {
     setEditFrom({
       ...editForm,
-      [event.target.date]: event.target.value,
+      [event.target.name]: event.target.value,
     });
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    const { date, name, role, feedback, solution, _id } = editForm;
-    props.updateFeedback({ date, name, role, feedback, solution }, _id);
+    props.updateFeedback(editForm, fedback._id)
   };
-  const handleRemove = (id) => {
-    props.deleteFeedback(id);
-    props.history.push("/");
-  };
+
+  const removeFeedback = () => {
+    props.deleteFeedback(fedback._id)
+    props.history.push("/")
+  }
   return (
     <div className="data">
-      <h1>{data.date}</h1>
-      <h2>{data.name}</h2>
-      {data.role ? <h2>{data.role}</h2> : <h2>trainee</h2>}
-      <h2>{data.feedback}</h2>
-      <h2>{data.solution}</h2>
-      <button onClick={() => handleRemove(data._id)}>Delete this Feedback</button>
+      <h1>{fedback.date}</h1>
+      <h2>{fedback.name}</h2>
+      {fedback.role ? <h2>{fedback.role}</h2> : <h2>trainee</h2>}
+      <h2>{fedback.feedback}</h2>
+      <h2>{fedback.solution}</h2>
+      <button onClick={() => removeFeedback(fedback._id)}>Delete this Feedback</button>
       <form onSubmit={handleSubmit()}>
         <input
           type="text"
