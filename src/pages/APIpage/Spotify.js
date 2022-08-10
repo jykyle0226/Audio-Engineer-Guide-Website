@@ -3,7 +3,7 @@ import axios from "axios";
 import "../../Style/spotify.css";
 function Spotify() {
   const CLIENT_ID = "c8a2306be41f4413ad5578215afa8c04";
-  const REDIRECT_URI = "https://iridescent-croquembouche-9e80f7.netlify.app/Spotify";
+  const REDIRECT_URI = "https://iridescent-croquembouche-9e80f7.netlify.app/Spotify#access_token=BQAiUPbxvpSKlXQKR9g6UuyKp9wVn2IZooUTVXISt4xtcWcmxZ9n7y6CMbb1FJ5x5PTKbhIeFefypQ40vgEDZ3dGaIdMFTgzWZXubJuexD4uLoZMZ2sbe9qlliA0RmClDx7hqGuhJO0XQ1a0fj1opVslCD8rsdXyiChar_Fw63kofWSOe7vdPs0s56ruOtc&token_type=Bearer&expires_in=3600";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
 
