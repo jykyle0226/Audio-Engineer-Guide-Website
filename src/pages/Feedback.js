@@ -8,7 +8,7 @@ import "../Style/Index.css";
 const Feedback = (props) => {
   const [feedback, setFeedback] = useState(null);
 
-  const URL = "http://localhost:4000/Feedback/";
+  const URL = "https://gcck-auido-engieenr-website.herokuapp.com/Feedback";
 
   const getFeedback = async () => {
     const response = await fetch(URL);
