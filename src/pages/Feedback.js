@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Show from "../pages/Show";
 import Index from "../pages/Index";
-import Create from "./APIpage/Create";
+import Create from "../components/Create";
 import "../Style/Index.css";
 const Feedback = (props) => {
   const [feedback, setFeedback] = useState(null);
@@ -24,8 +24,9 @@ const Feedback = (props) => {
       },
       body: JSON.stringify(fedback),
     });
-    await getFeedback;
+    getFeedback();
   };
+
 
   const updateFeedback = async (fedback, id) => {
     await fetch(URL + id, {
@@ -57,10 +58,12 @@ const Feedback = (props) => {
           <Index feedback={feedback} createFeedback={createFeedback} />
         </Route>
         <Route
-          path="/Feedback/:id"
+          exact path="/Feedback/:id"
           render={(rp) => (
             <Show
               feedback={feedback}
+              URL={URL}
+              getFeedback={getFeedback}
               updateFeedback={updateFeedback}
               deleteFeedback={deleteFeedback}
               {...rp}

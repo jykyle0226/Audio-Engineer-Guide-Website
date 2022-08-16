@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-
+import '../Style/create.css'
 const Create = (props) => {
   
   const [newForm, setNewForm] = useState({

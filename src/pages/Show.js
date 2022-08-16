@@ -1,8 +1,8 @@
 import { useState } from "react";
 function Show(props) {
-  const id = props.match.params.id;
+  const id = props.match.params.id
   const feedback = props.feedback
-  const fedback = feedback.find(p => p._id === id);
+  const fedback = feedback.find(p => p._id === id)
   // state for form
   const [editForm, setEditFrom] = useState(fedback);
   const handleChange = event => {
