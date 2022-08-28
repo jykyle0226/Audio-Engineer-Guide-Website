@@ -6,9 +6,10 @@ import Index from "../pages/Index";
 import Create from "../components/Create";
 import "../Style/Index.css";
 const Feedback = (props) => {
+  console.log(process.env)
   const [feedback, setFeedback] = useState(null);
 
-  const URL = "https://gcck-auido-engieenr-website.herokuapp.com/Feedback";
+  const URL = process.env.NODE_ENV === 'production'  ? "https://pdteam.herokuapp.com/feedback"  : "http://localhost:4000/Feedback";
 
   const getFeedback = async () => {
     const response = await fetch(URL);

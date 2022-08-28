@@ -12,7 +12,6 @@ function Show(props) {
     });
   };
   const handleSubmit = event => {
-    event.preventDefault();
     props.updateFeedback(editForm, fedback._id)
   };
 
