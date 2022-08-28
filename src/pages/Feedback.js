@@ -61,7 +61,7 @@ const Feedback = (props) => {
         <Route
           exact path="/Feedback/:id"
           render={(rp) => (
-            <Show
+            !feedback  &&  <Show
               feedback={feedback}
               URL={URL}
               getFeedback={getFeedback}
