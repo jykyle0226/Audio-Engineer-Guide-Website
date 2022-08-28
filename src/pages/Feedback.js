@@ -9,7 +9,7 @@ const Feedback = (props) => {
   console.log(process.env)
   const [feedback, setFeedback] = useState(null);
 
-  const URL = process.env.NODE_ENV === 'production'  ? "https://pdteam.herokuapp.com/feedback"  : "http://localhost:4000/Feedback";
+  const URL = process.env.NODE_ENV === 'production'  ? "https://pdteam.herokuapp.com/feedback/"  : "http://localhost:4000/Feedback/";
 
   const getFeedback = async () => {
     const response = await fetch(URL);
