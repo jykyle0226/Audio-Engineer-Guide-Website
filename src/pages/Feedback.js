@@ -6,7 +6,6 @@ import Index from "../pages/Index";
 import Create from "../components/Create";
 import "../Style/Index.css";
 const Feedback = (props) => {
-  console.log(process.env)
   const [feedback, setFeedback] = useState(null);
 
   const URL = process.env.NODE_ENV === 'production'  ? "https://pdteam.herokuapp.com/feedback/"  : "http://localhost:4000/Feedback/";
