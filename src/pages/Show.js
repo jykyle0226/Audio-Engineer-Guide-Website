@@ -17,7 +17,7 @@ function Show(props) {
 
   const removeFeedback = () => {
     props.deleteFeedback(fedback._id)
-    props.history.push("/")
+    props.history.push("/Feedback")
   }
   return (
     <div className="data">
@@ -32,31 +32,31 @@ function Show(props) {
           type="text"
           name="date"
           value={editForm.date}
-          onChange={handleChange()}
+          onChange={handleChange}
         />
         <input
           type="text"
           name="name"
           value={editForm.name}
-          onChange={handleChange()}
+          onChange={handleChange}
         />
         <input
           type="text"
           name="role"
           value={editForm.role}
-          onChange={handleChange()}
+          onChange={handleChange}
         />
         <input
           type="text"
           name="feedback"
           value={editForm.feedback}
-          onChange={handleChange()}
+          onChange={handleChange}
         />
         <input
           type="text"
           name="solution"
           value={editForm.solution}
-          onChange={handleChange()}
+          onChange={handleChange}
         />
         <input type="submit" value="Update" />
       </form>
