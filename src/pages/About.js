@@ -36,7 +36,7 @@ const About = () => {
 
           <div className="links">
             <a
-              href="https://i.imgur.com/mr2TJ0mm.png"
+              href="https://www.linkedin.com/in/isaiahshin/"
               target="_blank"
               rel="noopener noreferrer"
             >
