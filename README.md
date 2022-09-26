@@ -17,6 +17,6 @@ Mongo DB | Express.js | React.js | Node.js | Netlify | Heroku
 [click here](https://iridescent-croquembouche-9e80f7.netlify.app/) to see the deployed page!
 
 ## Future Enhancements:
- * Show/Delete function
+ * Show/Delete function (Aug 20th) ✅
  * Song search function with Spotify API
 
