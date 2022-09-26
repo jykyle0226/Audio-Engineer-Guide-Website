@@ -8,7 +8,10 @@ import "../Style/Index.css";
 const Feedback = (props) => {
   const [feedback, setFeedback] = useState(null);
 
-  const URL = process.env.NODE_ENV === 'production'  ? "https://pdteam.herokuapp.com/feedback/"  : "http://localhost:4000/Feedback/";
+  const URL =
+    process.env.NODE_ENV === "production"
+      ? "https://pdteam.herokuapp.com/feedback/"
+      : "http://localhost:4000/Feedback/";
 
   const getFeedback = async () => {
     const response = await fetch(URL);
@@ -26,7 +29,6 @@ const Feedback = (props) => {
     });
     getFeedback();
   };
-
 
   const updateFeedback = async (fedback, id) => {
     await fetch(URL + id, {
@@ -51,31 +53,40 @@ const Feedback = (props) => {
   return (
     <main>
       <Switch>
-        <Route exact path="/Feedback/create">
-          <Create feedback={feedback} createFeedback={createFeedback} />
-        </Route>
+        <Route
+          exact
+          path="/Feedback/create"
+          render={(rp) =>
+            feedback && (
+              <Create feedback={feedback} createFeedback={createFeedback}
+              {...rp}
+            />
+            )
+          }
+        />
         <Route exact path="/Feedback">
           <Index feedback={feedback} createFeedback={createFeedback} />
         </Route>
         <Route
-          exact path="/Feedback/:id"
-          render={(rp) => (
-            feedback  &&  <Show
-              feedback={feedback}
-              URL={URL}
-              getFeedback={getFeedback}
-              updateFeedback={updateFeedback}
-              deleteFeedback={deleteFeedback}
-              {...rp}
-            />
-          )}
+          exact
+          path="/Feedback/:id"
+          render={(rp) =>
+            feedback && (
+              <Show
+                feedback={feedback}
+                URL={URL}
+                getFeedback={getFeedback}
+                updateFeedback={updateFeedback}
+                deleteFeedback={deleteFeedback}
+                {...rp}
+              />
+            )
+          }
         />
       </Switch>
       <div id="add-button">
         <Link to="/Feedback/create">
-          <button  className="button-40">
-            Add Feedback
-          </button>
+          <button className="button-40">Add Feedback</button>
         </Link>
       </div>
     </main>

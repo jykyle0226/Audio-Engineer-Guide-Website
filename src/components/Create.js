@@ -19,7 +19,8 @@ const Create = (props) => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.createDestination(newForm);
+    props.createFeedback(newForm);
+    props.history.push("/Feedback");
   };
 
   return (
@@ -70,7 +71,7 @@ const Create = (props) => {
         />
 
         <br />
-        <input type="submit" value="Add to feedback" />
+        <input type="submit" value="Add to feedback"/>
       </form>
     </div>
   );
